@@ -12,7 +12,7 @@ exports.onClientEntry = () => {
   const pagePath = window.pagePath;
   const location = window.location;
 
-  if (pagePath !== location.pathname && pagePath !== location.pathname + '/') {
+  if (pagePath && pagePath !== location.pathname && pagePath !== location.pathname + '/') {
     const originalLoadPageSync = loader.loadPageSync;
     const originalLoadPage = loader.loadPage;
 
