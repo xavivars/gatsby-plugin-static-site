@@ -26,7 +26,9 @@ exports.onClientEntry = () => {
         pageResources = originalLoadPageSync(path)
       }
 
-      pageResources.page.matchPath = "*"
+      if (pageResources.page) {
+        pageResources.page.matchPath = "*"
+      }
 
       return pageResources;
     };
@@ -42,7 +44,9 @@ exports.onClientEntry = () => {
         pageResources = originalLoadPage(path)
       }
 
-      pageResources.page.matchPath = "*"
+      if (pageResources.page) {
+        pageResources.page.matchPath = "*"
+      }
 
       return pageResources;
     }
