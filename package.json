@@ -1,6 +1,6 @@
 {
   "name": "@xavivars/gatsby-plugin-static-site",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A plugin that disables client side routing for gatsby",
   "main": "index.js",
   "author": "Xavi Ivars <xavi.ivars@gmail.com>",
